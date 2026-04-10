@@ -775,8 +775,7 @@ section {
     .footer-grid { gap: 30px; }
 }
 
-@media (max-width: 768px) {
-    .nav { display: none; } /* Скрываем навигацию на маленьких экранах */
+@media (max-width: 768px) { /* Скрываем навигацию на маленьких экранах */
     .hero { padding: 100px 0; }
     .hero h1 { font-size: 38px; }
     .hero p { font-size: 16px; }
