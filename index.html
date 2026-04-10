@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный Юрист — Юридическое агентство</title>
+    <!-- Изменено: Подключены более классические шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/style.css">
+</head>
+
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="static/images/logo.png" alt="Логотип" class="logo-img">
+                <div class="logo-container">
+                    <div class="logo-text">ЛИЧНЫЙ ЮРИСТ</div>
+                    <div class="logo-subtitle">ООО "МАВиР"</div>
+                </div>
+            </div>
+
+            <!-- Кнопка гамбургер -->
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <nav class="nav" id="nav-menu">
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#team">Команда</a>
+                <a href="#contact">Контакты</a>
+                <div class="phone-mobile">
+                    <a href="tel:+79097777686">+7 (909) 777-76-86</a>
+                </div>
+            </nav>
+
+            <div class="phone header-phone-desktop">
+                <a href="tel:+79097777686">+7 (909) 777-76-86</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Полноэкранный Hero с эффектом затухания -->
+    <section class="hero full-screen">
+        <!-- Фон, которым управляет JS -->
+        <div class="hero-bg" id="heroBg"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content" id="heroContent">
+                <h1>Профессиональная юридическая защита ваших интересов</h1>
+                <p>Более 20 лет опыта в решении самых сложных правовых вопросов. Мы обеспечиваем квалифицированную
+                    поддержку для бизнеса и частных лиц.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary animated-btn-primary">Бесплатная консультация</a>
+                    <a href="#services" class="btn btn-outline animated-btn-outline">Наши услуги</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down"></div>
+    </section>
+
+    <!-- Блок Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем полный спектр юридических услуг для решения любых правовых вопросов</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Корпоративное право</h3>
+                    <p>Мы помогаем бизнесу на всех этапах — от регистрации компании до сопровождения сделок и разрешения
+                        корпоративных споров. Подготовим уставные документы, поможем с долевыми изменениями и защитим
+                        ваши интересы при конфликтах между участниками.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Недвижимость</h3>
+                    <p>Сопровождаем сделки с жилой и коммерческой недвижимостью — покупка, аренда, строительство,
+                        регистрация прав. Проверим «чистоту» объекта, подготовим договоры и обеспечим юридическую
+                        безопасность вашей сделки.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Семейное право</h3>
+                    <p>Защищаем права клиентов в вопросах брака, развода, алиментов, раздела имущества и опеки.
+                        Действуем деликатно, но решительно, помогая найти справедливое решение даже в сложных семейных
+                        ситуациях.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Договорное право</h3>
+                    <p>Разрабатываем, анализируем и сопровождаем договоры любых типов — от поставки и аренды до подряда
+                        и услуг. Проверим условия, снизим риски и обеспечим исполнение обязательств.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Защита интересов в суде</h3>
+                    <p>Представляем клиентов во всех судебных инстанциях. Оценим перспективы дела, подготовим иск,
+                        соберём доказательства и обеспечим профессиональную защиту ваших прав.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up">
+                    <h3>Арбитраж</h3>
+                    <p>Защищаем интересы бизнеса в арбитражных судах. Разрабатываем стратегию, ведём переговоры, готовим
+                        досудебные претензии и сопровождаем процесс до исполнения решения суда.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок О компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content" data-aos="fade-right">
+                <h2>О нашей компании</h2>
+                <p>Юридическое агентство «Личный юрист» — ведущая фирма, специализирующаяся на всех сферах
+                    законодательства. Наши адвокаты успешно защищают интересы клиентов в судах РФ и в международных
+                    инстанциях.</p>
+                <p>Мы применяем индивидуальный подход и подбираем оптимальные нормы права для максимальных результатов.
+                    Предлагаем поддержку как российским предприятиям, так и помощь в выходе на рынок США.</p>
+                <div class="confidential">
+                    <span class="lock-icon">🔒</span>
+                    Вся информация, полученная от вас, является строго конфиденциальной.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Команда -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Наша команда</h2>
+                <p>Профессионалы с многолетним опытом работы</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="member-photo">М</div>
+                    <h3>Манаков Андрей</h3>
+                    <span class="member-exp">19 лет опыта</span>
+                    <div class="member-social">
+                        <!-- <a href="mailto:manakov_a@mail.ru"></a> -->
+                        <a href="tel:+79097777686">
+                            <img src="static/images/color.png" alt="телефон">
+                        </a>
+                    </div>
+                </div>
+                <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="member-photo">М</div>
+                    <h3>Манакова Юлия</h3>
+                    <span class="member-exp">8 лет опыта</span>
+                    <div class="member-social">
+                        <a href="tel:+79520526966">
+                            <img src="static/images/color.png" alt="телефон">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты и Форма -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-down">
+                <h2>Свяжитесь с нами</h2>
+                <p>Получите бесплатную консультацию по вашему вопросу</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Доработать -->
+                        </div>
+                        <div><strong>Адрес</strong><br>г. Калининград</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- доработать -->
+                        </div>
+                        <div><strong>Телефон</strong><br>+7 (909) 777-76-86</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Доработать -->
+                        </div>
+                        <div><strong>Email</strong><br>manakov_a@mail.ru</div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" placeholder="Иван Иванов">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="example@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Сообщение</label>
+                            <textarea placeholder="Опишите вашу ситуацию..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo logo-light">
+                        <span class="logo-icon">
+                            <!-- Добавить логотип -->
+                        </span>
+                        <div class="logo-text">
+                            <strong>ЛИЧНЫЙ ЮРИСТ</strong>
+                            <span>юридическое агентство</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Профессиональная юридическая помощь с 2009 года</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#">Корпоративное право</a></li>
+                        <li><a href="#">Недвижимость</a></li>
+                        <li><a href="#">Семейное право</a></li>
+                        <li><a href="#">Судебная защита</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#team">Команда</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul class="contact-list">
+                        <li>+7 (909) 777-76-86</li>
+                        <li>manakov_a@mail.ru</li>
+                        <li>г. Калининград</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#" class="social-link tg" aria-label="Telegram">
+                            <img src="static/images/telegram_5968804.png" alt="Телеграм">
+                        </a>
+                        <a href="#" class="social-link vk" aria-label="VK">
+                            <img src="static/images/vkontakte_3536582.png" alt="ВК">
+                        </a>
+                        <a href="#" class="social-link max" aria-label="Max">
+                            <img src="static/images/logo_max.png" alt="Max">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 ЛИЧНЫЙ ЮРИСТ.ООО"МАВиР"
+            </div>
+        </div>
+    </footer>
+    <!-- AOS CSS & JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // 1. Инициализация анимаций AOS
+        AOS.init({
+            duration: 1000,
+            once: false, // Эффекты срабатывают ПОСТОЯННО (и вверх, и вниз)
+            mirror: true, // Элементы анимируются при прокрутке мимо них в обоих направлениях
+            offset: 50
+        });
+
+        // 2. Исправленное мобильное меню
+        const menuToggle = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+        }
+
+        // Закрытие меню при клике на ссылку или вне меню
+        document.addEventListener('click', function (e) {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        });
+
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            });
+        });
+
+        // 3. Параллакс Hero
+        window.addEventListener('scroll', function () {
+            const scrollPos = window.pageYOffset;
+            const heroBg = document.getElementById('heroBg');
+            const heroContent = document.getElementById('heroContent');
+            if (heroBg && heroContent && window.innerWidth > 768) {
+                let opacityValue = 1 - (scrollPos / 800);
+                if (opacityValue >= 0) {
+                    heroContent.style.opacity = opacityValue;
+                    heroContent.style.transform = `translateY(${scrollPos * 0.3}px)`;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
