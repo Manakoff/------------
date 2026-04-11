@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный Юрист — Юридическое агентство</title>
+    <meta name="description"
+        content="Профессиональная юридическая помощь в Калининграде. Решаем споры по недвижимости, семейным и трудовым делам. Консультация бесплатно!">
+    <title>Юридические услуги в Калининград | Адвокатское бюро "Личный юрист"</title>
     <!-- Изменено: Подключены более классические шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
     <header class="header">
         <div class="container header-inner">
             <div class="logo">
-                <img src="static/images/logo.png" alt="Логотип" class="logo-img">
+                <!-- <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип" class="logo-img"> -->
                 <div class="logo-container">
                     <div class="logo-text">ЛИЧНЫЙ ЮРИСТ</div>
                     <div class="logo-subtitle">ООО "МАВиР"</div>
@@ -119,14 +120,13 @@
         <div class="container">
             <div class="about-content" data-aos="fade-right">
                 <h2>О нашей компании</h2>
-                <p>Юридическое агентство «Личный юрист» — ведущая фирма, специализирующаяся на всех сферах
-                    законодательства. Наши адвокаты успешно защищают интересы клиентов в судах РФ и в международных
-                    инстанциях.</p>
-                <p>Мы применяем индивидуальный подход и подбираем оптимальные нормы права для максимальных результатов.
-                    Предлагаем поддержку как российским предприятиям, так и помощь в выходе на рынок США.</p>
+                <p>Юридическое агентство «Личный юрист» — это команда опытных адвокатов, на счету которых более 1000
+                    успешных судебных процессов. Мы специализируемся на семейных, трудовых и арбитражных спорах,
+                    обеспечивая клиентам надежную защиту и возврат денежных средств.</p>
+                <p>Личный спор или бизнес-конфликт — мы берем на себя полную правовую ответственность и сопровождаем вас
+                    до победного финала.</p>
                 <div class="confidential">
-                    <span class="lock-icon">🔒</span>
-                    Вся информация, полученная от вас, является строго конфиденциальной.
+                    Вся информация, полученная от вас, является строго конфиденциальной!
                 </div>
             </div>
         </div>
@@ -198,7 +198,8 @@
                     <form action="/send" method="POST">
                         <div class="form-group">
                             <label>Ваше имя</label>
-                            <input type="text" name="name" placeholder="Иван Иванов" required minlength="2" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+                            <input type="text" name="name" placeholder="Иван Иванов" required minlength="2"
+                                pattern="^[A-Za-zА-Яа-яЁё\s]+$">
                         </div>
                         <div class="form-group">
                             <label>Email</label>
@@ -206,7 +207,8 @@
                         </div>
                         <div class="form-group">
                             <label>Телефон</label>
-                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required minlength="10">
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required
+                                minlength="10">
                         </div>
                         <div class="form-group">
                             <label>Сообщение</label>
@@ -264,13 +266,14 @@
                         <li>г. Калининград</li>
                     </ul>
                     <div class="social-icons">
-                        <a href="#" class="social-link tg" aria-label="Telegram">
+                        <a href="https://t.me/MAHAKOB_A" class="social-link tg" aria-label="Telegram">
                             <img src="static/images/telegram_5968804.png" alt="Телеграм">
                         </a>
-                        <a href="#" class="social-link vk" aria-label="VK">
+                        <a href="https://vk.com/club237574235" class="social-link vk" aria-label="VK">
                             <img src="static/images/vkontakte_3536582.png" alt="ВК">
                         </a>
-                        <a href="#" class="social-link max" aria-label="Max">
+                        <a href="https://max.ru/u/f9LHodD0cOIHH9YacKa1IMMTYoGAeUQwwNfd8zoofccm-mQ4G_xaod2__NM"
+                            class="social-link max" aria-label="Max">
                             <img src="static/images/logo_max.png" alt="Max">
                         </a>
                     </div>
