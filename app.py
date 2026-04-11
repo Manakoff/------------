@@ -24,8 +24,8 @@ def send():
         body = f"Имя: {name}\nEmail: {email}\nТелефон: {phone}\nСообщение: {message}"
         msg = MIMEText(body)
         msg['Subject'] = 'ЗАЯВКА С САЙТА ЛИЧНЫЙ ЮРИСТА'
-        msg['From'] = 'manakoooov@gmail.com'
-        msg['To'] = 'manakoooov@gmail.com'
+        msg['From'] = os.getenv('MAIL_USER')
+        msg['To'] = os.getenv('MAIL_RECEIVER')
 
         print("--- Попытка подключения к SMTP Gmail ---")
         
