@@ -4,16 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Профессиональная юридическая помощь в Калининграде. Решаем споры по недвижимости, семейным и трудовым делам. Консультация бесплатно!">
+    
+    <!-- SEO: Основное описание для поиска -->
+    <title>Юридические услуги в Калининграде | Юридическое бюро "Личный юрист"</title>
+    <meta name="description" content="Профессиональная юридическая помощь в Калининграде. Споры по недвижимости, семейные и трудовые дела. Бесплатная консультация от опытных юристов. Звоните!">
+    <meta name="keywords" content="юрист Калининград, юридические услуги, адвокат по недвижимости, семейный юрист, консультация юриста">
+
+    <!-- Верификация Яндекса -->
     <meta name="yandex-verification" content="96b2dc59c32b93db" />
-    <title>Юридические услуги в Калининград | Юридическое бюро "Личный юрист"</title>
-    <!-- Изменено: Подключены более классические шрифты -->
+
+    <!-- Open Graph: Красивая карточка при отправке ссылки в Telegram/VK -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://personal-lawyer.ru">
+    <meta property="og:title" content="Личный юрист | Юридические услуги в Калининграде">
+    <meta property="og:description" content="Решаем сложные юридические споры. Недвижимость, семья, право. Консультация бесплатно!">
+    <!-- Важно: укажите путь к вашей картинке-превью -->
+    <!-- <meta property="og:image" content="{{ url_for('static', filename='images/preview.jpg', _external=True) }}"> -->
+    <!-- Иконка сайта (Favicon) — будет видна в поиске рядом с названием -->
+    <!-- <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon"> -->
+    <!-- Шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
         rel="stylesheet">
+    <!-- Стили -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 
@@ -122,7 +137,7 @@
         <div class="container">
             <div class="about-content" data-aos="fade-right">
                 <h2>О нашей компании</h2>
-                <p>Юридическое агентство «Личный юрист» — это команда опытных адвокатов, на счету которых более 1000
+                <p>Юридическое агентство «Личный юрист» — это команда опытных юристов, на счету которых более 1000
                     успешных судебных процессов. Мы специализируемся на семейных, трудовых и арбитражных спорах,
                     обеспечивая клиентам надежную защиту и возврат денежных средств.</p>
                 <p>Личный спор или бизнес-конфликт — мы берем на себя полную правовую ответственность и сопровождаем вас
@@ -147,7 +162,6 @@
                     <h3>Манаков Андрей</h3>
                     <span class="member-exp">19 лет опыта</span>
                     <div class="member-social">
-                        <!-- <a href="mailto:manakov_a@mail.ru"></a> -->
                         <a href="tel:+79097777686">
                             <img src="static/images/color.png" alt="телефон">
                         </a>
@@ -294,8 +308,8 @@
         // 1. Инициализация анимаций AOS
         AOS.init({
             duration: 1000,
-            once: false, // Эффекты срабатывают ПОСТОЯННО (и вверх, и вниз)
-            mirror: true, // Элементы анимируются при прокрутке мимо них в обоих направлениях
+            once: false, 
+            mirror: true, 
             offset: 50
         });
 
