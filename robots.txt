@@ -1,0 +1,11 @@
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://personal-lawyer.ru/
