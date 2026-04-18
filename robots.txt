@@ -6,6 +6,6 @@ User-agent: Yandex
 Allow: /
 
 User-agent: *
-Disallow: /
+Allow: /
 
 Sitemap: https://personal-lawyer.ru/sitemap.xml
