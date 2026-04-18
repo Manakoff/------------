@@ -8,4 +8,4 @@ Allow: /
 User-agent: *
 Disallow: /
 
-Sitemap: https://personal-lawyer.ru/
+Sitemap: https://personal-lawyer.ru/sitemap.xml
